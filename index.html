@@ -29,12 +29,16 @@
     <div id="box"></div>
   </div>
   <script>
+    console.dir(document)
     const box = document.getElementById('box');
     let y = 0;
-    document.addEventListener('scroll', function(){
+    let scrolltop = document.scrollingElement.scrollTop;
+    console.log(scrolltop);
+
+    document.addEventListener('scroll', () => {
       for (i=0; i<10000; i++) {
-        box.style.transform = `rotate(${y}deg)`;
-        y++
+          box.style.transform = `rotate(${y}deg)`;
+          y++
       }
     })
   </script>
