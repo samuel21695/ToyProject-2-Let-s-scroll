@@ -7,7 +7,7 @@
   <style>
     #root{
       width: 100vw;
-      height : 100vh;
+      height : 1000vh;
       display: flex;
       align-content: center;
       justify-content: center;
@@ -31,6 +31,9 @@
     const root = document.getElementById('root');
     const box = document.getElementById('box');
     
+    root.addEventListener('scroll', () => {
+      console.log('hi')
+    })
   </script>
 </body>
 </html>
