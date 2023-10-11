@@ -20,6 +20,7 @@
       left: 45vw;
       top: 45vh;
       position: fixed;
+      transition: 1s;
       /* transform: rotate(deg); */
     }
   </style>
@@ -42,9 +43,8 @@
     document.addEventListener('scroll', () => {
       box.style.transform = `rotate(${y}deg)`;
       box.style.background = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
-      root.style.background = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
+      // root.style.background = `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`;
       y++
-      
     })
   </script>
 </body>
