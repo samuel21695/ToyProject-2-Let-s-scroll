@@ -31,15 +31,16 @@
   <script>
     console.dir(document)
     const box = document.getElementById('box');
+    // let scrolltop = document.scrollingElement.scrollTop;
+    // console.log(scrolltop);
+    // let a = window.pageYoffset; || document.documentElement.scrollTop;
+    // console.log(a);
+    
     let y = 0;
-    let scrolltop = document.scrollingElement.scrollTop;
-    console.log(scrolltop);
-
+    // rotate div box while scrolling
     document.addEventListener('scroll', () => {
-      for (i=0; i<10000; i++) {
-          box.style.transform = `rotate(${y}deg)`;
-          y++
-      }
+      box.style.transform = `rotate(${y}deg)`;
+      y++
     })
   </script>
 </body>
