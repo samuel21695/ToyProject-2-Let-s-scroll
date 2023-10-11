@@ -20,6 +20,7 @@
       left: 45vw;
       top: 45vh;
       position: fixed;
+      /* transform: rotate(deg); */
     }
   </style>
 </head>
@@ -29,9 +30,12 @@
   </div>
   <script>
     const box = document.getElementById('box');
-    
+    let y = 0;
     document.addEventListener('scroll', function(){
-      console.log('hi')
+      for (i=0; i<10000; i++) {
+        box.style.transform = `rotate(${y}deg)`;
+        y++
+      }
     })
   </script>
 </body>
